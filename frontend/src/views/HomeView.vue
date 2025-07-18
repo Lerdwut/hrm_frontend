@@ -1,9 +1,9 @@
 <template>
-  <SideBar />
+ <AdminLayout></AdminLayout>
 </template>
 
 <script setup lang="ts">
-import SideBar from '@/components/SideBar.vue';
+import AdminLayout from '@/layouts/AdminLayout/AdminLayout.vue';
 
 </script>
   
