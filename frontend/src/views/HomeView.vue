@@ -1,7 +1,10 @@
 <template>
-  <div>Home page</div>
+  <SideBar />
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import SideBar from '@/components/SideBar.vue';
 
+</script>
+  
 <style scoped></style>
