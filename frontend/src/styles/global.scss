@@ -23,3 +23,151 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.hr-theme {
+  background: linear-gradient(135deg, #e3f0ff 0%, #f7faff 100%);
+  border: 2px solid #1976d2;
+  box-shadow: 0 4px 24px rgba(25, 118, 210, 0.08);
+  padding: 32px 24px;
+  position: relative;
+  max-width: 400px;
+  margin: 48px auto;
+  border-radius: 16px;
+  min-width: 280px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.logo img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid #1976d2;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+}
+
+.login-container h1 {
+  margin-bottom: 8px;
+  font-size: 2.2rem;
+  color: #1976d2;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.login-container p {
+  margin-bottom: 24px;
+  color: #1565c0;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.login-form input {
+  padding: 12px 14px;
+  border: 1.5px solid #90caf9;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  background: #f7faff;
+  transition: border 0.2s;
+}
+
+.login-form input:focus {
+  border-color: #1976d2;
+  outline: none;
+  background: #e3f0ff;
+}
+
+.btn {
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  background: #1976d2;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  width: 100%;
+}
+
+.btn:disabled {
+  background: #90caf9;
+  cursor: not-allowed;
+}
+
+.btn.secondary {
+  background: #fff;
+  color: #1976d2;
+  border: 1.5px solid #1976d2;
+  margin-right: 8px;
+  font-weight: 500;
+  box-shadow: none;
+  width: auto;
+  padding: 12px 24px;
+}
+
+.btn.secondary:hover {
+  background: #e3f0ff;
+}
+
+.btn.google {
+  background: #fff;
+  color: #444;
+  border: 1.5px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 500;
+  box-shadow: none;
+  width: auto;
+  padding: 12px 24px;
+}
+
+.btn.google:hover {
+  background: #e3f0ff;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+@media (max-width: 500px) {
+  .hr-theme {
+    padding: 16px 4px;
+    max-width: 98vw;
+    margin: 16px auto;
+    border-radius: 8px;
+  }
+
+  .logo img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .login-container h1 {
+    font-size: 1.5rem;
+  }
+}
+
+
